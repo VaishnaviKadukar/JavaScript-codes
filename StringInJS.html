@@ -1,0 +1,37 @@
+<!--write a code to demo of String  and string function in javscript-->
+<html>
+    <head>
+        <title>string function in javscript</title>
+    </head>
+    <body>
+        hii i am here to see string function in javscript
+        <script>
+            const str="i*am*string";
+            //fun1
+            console.log("length of string is",str.length);//use to find length of string
+            //fun2
+            console.log("uppercase",str.toUpperCase());//convert string into uppercase
+            //fun3
+            console.log("lowercase",str.toLowerCase());//convert string into lowercase
+            //fun4
+            console.log("substr is",str.substr(5));//give substring (output- string)
+            //fun5
+            console.log("substring is",str.substring(2,7));//give substring(output-am*st)
+            //fun6
+            console.log("splitstring is",str.split('*'));//split string using given chracter
+            //fun7
+            console.log("give value at location",str[3]);//provide character present on given location
+            //fun8
+            console.log("index of this alphabet",str.indexOf('m'));//provide index of given alphabet
+            
+            console.log("index of this alphabet",str.indexOf('p'));//if it is not in string then provide -1
+            
+            // Merge strings -using +operator
+            console.log(str+" i am another string" +45+10);
+            //you can merge string string on differnt way
+            console.log(str,20+30);//one way ,
+            console.log(`My lucky number is ${str}, this ia an example`);
+            console.log(`My lucky number is ${20+30}, this ia an example`);
+        </script>
+    </body>
+</html>

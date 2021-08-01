@@ -1,0 +1,98 @@
+<!--Write a code to demo of Non primitive datatype in javascript-->
+<!--Array ,Object ,Array of objects-->
+
+<html>
+    <head>
+        <title>
+            Non primitive datatype in javascript 
+        </title>
+    </head>
+    <body>
+        hii i am there to see the  Non primitive datatype in javascript
+        <script>
+            //Array in javascript
+            //two ways of creating array in javascript
+            //1.using Array constructor.
+            const arrayvar1= new Array('vaishnavi','bhushan','mona','borkar');//same elements like string
+            console.log(arrayvar1);
+            const arrayvar2=new Array('vaishnavi',5.6, null,56,true, undefined);//in javscript array contain set of similar as well as desimilar elements
+            console.log(arrayvar2);
+            //acessing data from array
+            console.log("at location 1 ",arrayvar1[1]);
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // 2. ES6- use of [] symbol--if data present inside [] then it consider than array
+            const fruits1=['Apple','Banana','graphes','watermalen'];
+            console.log(fruits1);
+            const fruits2=['Apple',78,7.8,null, undefined];
+            console.log(fruits2);//in javscript array contain set of similar as well as desimilar elements
+            //accessing data from array
+            console.log(fruits2[1]);
+
+//*******************************************************************************************************************************************************************
+   //objects --objectname={key :value , key : value}
+    
+    const user= {
+        firstname :'vaishnavi',//this is object
+        lastname :'kadukar',
+        id :8999,
+        salary :23900,
+        //you can also use array for it
+        skills :['programming','creative thinking','time management'],//using []
+        hobbies:new Array('travelling','singing','dancing'),// constructor
+
+        //include objecs within object
+        address :{
+                   nationality:'indian',
+                   country:'india',
+                   state:'maharashtra',
+                   city:'amravati'
+                 }
+               }//object end here
+
+        console.log(user);    
+    //  Acess the values from the object
+    console.log(`hii, my name is '${user.firstname} my last name is ${user.lastname} my id is ${user.id}  my salary is ${user.salary} my skill is ${user.skills[1]} i live in ${user.address.state}`);
+
+    //Array of object [ {},{},{} ]
+    const employee=[
+
+        {
+         empid:1001,
+         destination:'london',
+         campany:'wipro',
+         skills:['c','c++','java']
+        }//object 1
+        ,
+        {
+         empid:1002,
+         destination:'maharashtra',
+         campany:'TCS',
+          skills:['vb.net','bootstrap','angular']
+        }//object 2
+        ,
+        {
+         empid:1003,
+         destination:'karnataka',
+         campany:'infosys',
+          skills:['javascript','vbscript']
+        }//object 3
+        ,
+        {
+         empid:1005,
+         destination:'himachal',
+         campany:'apple',
+         skills:['python','java']
+        }//object 4
+
+        ]//array end
+        console.log(employee);
+
+//how we can acess the values array of object
+// 1. I want to acces empid from each object which present inside employee object
+console.log(`${employee[0].empid},${employee[1].empid},${employee[2].empid},${employee[3].empid}`);
+// 2. I want to acces array from object which present inside employee array means i want to acess first skill of each employee
+console.log(`${employee[0].skills[0]},${employee[1].skills[0]},${employee[2].skills[0]},${employee[3].skills[0]}`);
+
+</script>
+    </body>
+</html>

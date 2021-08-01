@@ -1,0 +1,97 @@
+<!--write a code to demo of function in javascript-->
+<html>
+    <head>
+        <title>
+            function in javascript
+        </title>
+    </head>
+    <body>
+        hii i am here to see function in javascript
+        <script>
+            //1.traditional way
+            //2.ES6 way- most new and popular
+            // 1. function functionName(parameters) { ...bodyOfFunction }
+            //function with no argument no return 
+             function myfunction1()
+             {
+               console.log("function is executed");//function definition
+             }
+
+             //function with argument no return
+             function myfunction2( name )
+             {
+               console.log("my name is",name);//function definition
+             }
+
+             //function with no argument with return 
+             function myfunction3()
+             {
+               return 23;//function definition
+             }
+
+             //function with argument with return 
+             function myfunction4(name )
+             {
+               return name;//function definition
+             }
+
+             //call functions
+             // myfunction1()
+               myfunction1();
+             // myfunction2()
+               myfunction2("vaishnavi");
+             // myfunction3()
+               const val1 = myfunction3(); 
+               console.log(val1); 
+             // myfunction4()
+               const val2 =myfunction4("vaishnavi");
+               console.log(val2); 
+
+//****************************************************************************************************************
+
+
+
+              //.ES6 way- most new and popular
+
+              //1.ES6 arrow function
+
+             const add =(a,b)=>//also use let,var like  acess specifier
+              {
+                console.log(a+b);
+              }
+              add(100 ,100);
+              
+
+              //let see how function contain acesss modifiers
+
+              //const
+               {
+                 const add1=(a,b)=>
+               {
+                 console.log(a+b);
+               }
+               }
+               add1(200,400);//give error---add1 is not defined
+
+              // //let
+               {
+                const add2=(a,b)=> 
+               {
+                 console.log(a+b);
+               }
+               }
+               add2(200,400);//give error---add3 is not defined
+
+
+              //var
+              {
+                var add3=(a,b)=> 
+              {
+                console.log(a+b);
+              }
+              }
+              add3(200,400);
+
+          </script>
+    </body>
+</html>

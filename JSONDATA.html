@@ -1,0 +1,54 @@
+<!-- write a code to demo of JSON DATA IN JAVASCRIPT-->
+<html>
+    <head>
+        <title>JSON DATA IN JAVASCRIPT</title>
+    </head>
+    <body>
+        hii i am here to see JSON DATA IN JAVASCRIPT
+        <script>
+
+const employee=[
+
+{
+ empid:1001,
+ destination:'london',
+ campany:'wipro',
+ skills:['c','c++','java']
+}//object 1
+,
+{
+ empid:1002,
+ destination:'maharashtra',
+ campany:'TCS',
+  skills:['vb.net','bootstrap','angular']
+}//object 2
+,
+{
+ empid:1003,
+ destination:'karnataka',
+ campany:'infosys',
+  skills:['javascript','vbscript']
+}//object 3
+,
+{
+ empid:1005,
+ destination:'himachal',
+ campany:'apple',
+ skills:['python','java']
+}//object 4
+
+]//array end
+
+//************************************************************************************************************************************
+//convert your array of object into JSON (Javascript Object Notion)
+const jsondata=JSON.stringify(employee);
+console.log(jsondata);
+
+//Convert json into array object
+ const arrayobject=JSON.parse(jsondata);
+ console.log(arrayobject);
+
+        </script>
+    </body>
+</html>
+

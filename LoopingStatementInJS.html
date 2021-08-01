@@ -1,0 +1,115 @@
+<!--write a code to demo of looping statement in JS-->
+<!--Basic loop --- for loop--while loop-->
+<!--Higher order array method loop -->
+<html>
+    <head>
+        <title>looping statement in JS</title>
+    </head>
+    <body>
+        hii i am here to see looping statements in JS
+        <script>
+            //1.Basic loop
+            // for loop for(intialization;condition;increment/decrement)
+
+             for( var i=1;i<=5;i++)
+             {
+             console.log(i);
+             }
+             //-------------------------------------
+            // //2.while loop
+            var x=1;
+            while(x<=5)
+            {
+                console.log(x);
+                x++;
+            }
+
+           // 2.Higher order array method loop
+
+var employee=[
+{
+ empid:1001,
+ destination:'london',
+ campany:'wipro',
+ skills:['c','c++','java'],
+ bool:true
+}//object 1
+,
+{
+ empid:1002,
+ destination:'maharashtra',
+ campany:'TCS',
+  skills:['vb.net','bootstrap','angular'],
+  bool:false
+}//object 2
+,
+{
+ empid:1003,
+ destination:'karnataka',
+ campany:'infosys',
+  skills:['javascript','vbscript'],
+  bool:true
+}//object 3
+,
+{
+ empid:1005,
+ destination:'himachal',
+ campany:'apple',
+ skills:['python','java'],
+ bool:true
+}//object 4
+
+]//array end
+           console.log(employee);
+
+        //you can find length
+           console.log(employee.length);
+
+        //how i get array of object  value  using for loop     
+
+        for( let i=0; i<employee.length; i++)
+        {
+            console.log(employee[i].campany);
+        }
+
+        //also you can update the values
+        // for( let i=0; i<employee.length; i++)
+        // {
+        //     employee[i].campany="one";
+        // }
+        // console.log(employee);
+
+
+        //************************************************************************************************************************
+
+
+        //2.Higher order array method loop
+        //1.for of
+        /*
+        when we use for of 
+        1. when you are iterating on whole array
+        2. when you don't wan a use array[].property
+        */
+        for(let empvar of employee)
+        {
+        console.log(empvar.campany);
+        }
+
+         //also you can use if condition inside this for of loop
+         for(let empvar of employee)
+         {
+            empvar.bool==true ? console.log(empvar.empid):console.log("bool is false");
+         }
+         for(let empvar of employee)
+         {
+            if(empvar.bool==true){
+                console.log(empvar.empid);
+            }
+            else{
+                console.log("bool is false");
+            }
+         }
+         
+         </script>
+    </body>
+</html>
